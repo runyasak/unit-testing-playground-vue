@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import CounterView from '../views/CounterView.vue'
 import MinusCounterView from '@/views/MinusCounterView.vue'
+import PokemonsView from '@/views/PokemonsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,6 +14,10 @@ const router = createRouter({
     {
       path: '/minus',
       component: MinusCounterView
+    },
+    {
+      path: '/pokemons',
+      component: PokemonsView
     },
     {
       path: '/about',
